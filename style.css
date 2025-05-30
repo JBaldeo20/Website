@@ -1,10 +1,10 @@
 /* Basic Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #f5f7fa;
     position: absolute;
     top: 0;
     left: 0;
@@ -14,31 +14,34 @@ body {
 
 /* Header */
 header {
-    background: #000000;  /* Ensure correct background color */
-    color: white;
-    padding: 20px; /* Add padding */
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #0155d3; /* Optional border */
-    width: 100%; /* Make sure it spans full width */
-    box-sizing: border-box; /* Prevents padding from breaking layout */
+    border-bottom: 3px solid #3498db;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Navigation Bar */
 nav {
-    background: #444;
+    background: #34495e;
     padding: 0.5rem;
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures it stays above other elements */
+    z-index: 1000;
 }
 
-
 nav a {
-    color: white;
+    color: #ecf0f1;
     margin: 0 15px;
     text-decoration: none;
     font-size: 18px;
+}
+
+nav a:hover {
+    color: #3498db;
 }
 
 /* Main Content Layout */
@@ -46,6 +49,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    gap: 20px;
 }
 
 /* Blog Section */
@@ -53,8 +57,8 @@ section {
     flex: 2;
     padding: 20px;
     background: white;
-    margin-right: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Sidebar */
@@ -62,39 +66,46 @@ aside {
     flex: 1;
     padding: 20px;
     background: white;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Blog Articles */
 article {
     padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: white;
+    background: #2c3e50;
+    color: #ecf0f1;
     text-align: center;
     padding: 1rem;
     margin-top: 20px;
 }
+
 /* Styling for Popular Topics Links */
 #popular-links a:link {
-    color: blue;
+    color: #2980b9;
     text-decoration: none;
 }
 
 #popular-links a:visited {
-    color: purple;
+    color: #9b59b6;
 }
 
 #popular-links a:hover {
-    color: orange;
+    color: #e74c3c;
     text-decoration: underline;
 }
 
 #popular-links a:active {
-    color: red;
+    color: #f39c12;
 }
-

@@ -3,13 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog - Web Design Principles</title>
+    <title>Tech Pulse - Gadget Reviews</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <h1>Welcome to The Thrifters </h1>
-        <p>Discover the latest fashion trends and styles for every occasion</p>
-    </header
+        <h1>Welcome to Tech Pulse</h1>
+        <p>Your source for the latest gadget reviews and tech innovations</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Reviews</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#" onclick="func0()">Dashboard</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Blog Section -->
+        <section>
+            <h2>Latest Tech Reviews</h2>
+
+            <article>
+                <h3>Next-Gen Smartphones Compared</h3>
+                <p>We put the latest flagship phones head-to-head in our comprehensive review...</p>
+                <a href="#">Read More</a>
+            </article>
+
+            <article>
+                <h3>Best Laptops for Developers 2024</h3>
+                <p>Find the perfect coding machine with our curated list of developer-friendly laptops...</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+
+        <!-- Sidebar Section -->
+        <aside>
+            <h2>About Tech Pulse</h2>
+            <p>We're dedicated to bringing you honest, in-depth reviews of the latest technology to help you make informed purchases.</p>
+
+            <h3>Popular Categories</h3>
+            <ul id="popular-links">
+                <li><a href="https://example.com/smartphones">Smartphones</a></li>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="https://example.com/wearables">Wearables</a></li>
+                <li><a href="https://example.com/smart-home">Smart Home</a></li>
+            </ul>
+            
+        </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Tech Pulse. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function func0() {
+            window.location.href = "dashboard.html";  
+        }
+    </script>
+
+</body>
+</html>
